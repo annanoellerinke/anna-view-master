@@ -1,0 +1,9 @@
+.DS_Store
+node_modules/
+.vercel/
+.env*
+!.env.example
+mockups/
+artifacts/
+*.log
+public/anna-view-master-source.zip
