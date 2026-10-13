@@ -2,7 +2,7 @@
 
 A photographic, interactive View-Master with three swappable reels: Homebody Studios, Le Index on Substack, and Instagram. The red lever advances the film, while the selected image opens alongside the viewer.
 
-[Open the live View-Master](https://anna-view-master.vercel.app/) · [Download the complete source and images](https://anna-view-master.vercel.app/anna-view-master-source.zip)
+[Open the live View-Master](https://anna-view-master.vercel.app/) · [Download the complete source and images](https://github.com/annanoellerinke/anna-view-master/archive/refs/heads/main.zip)
 
 ## Run it
 
