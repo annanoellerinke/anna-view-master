@@ -22,7 +22,7 @@ function updateSelection(announce=true){
   const image=$('#selected-image');
   image.hidden=!item.image;
   $('#empty-photo').hidden=!!item.image;
-  if(item.image){image.src=safeURL(item.image);image.alt=item.imageAlt||headline(item.title);image.classList.toggle('portrait',active.key==='instagram');}
+  if(item.image){image.src=safeURL(item.image);image.alt=item.imageAlt||headline(item.title);image.classList.toggle('portrait',active.key==='instagram'||item.portrait===true);}
   else{$('#empty-location').textContent=item.title.replace('Homebody ','');}
   $('#photo-link').href=safeURL(item.url);
   $('#photo-link').setAttribute('aria-label',`${active.action}: ${headline(item.title)} (opens in a new tab)`);

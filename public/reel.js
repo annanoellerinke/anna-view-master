@@ -9,8 +9,9 @@ export function frameIndices(step, start, count) {
 }
 const esc = text => String(text ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 export function reelSVG(collection, prefix, start=0, active=false) {
+  const initialIndices=frameIndices(0,start,collection.items.length);
   const frames=Array.from({length:FRAME_COUNT},(_,i)=>{
-    const item=collection.items[mod(start+i,collection.items.length)];
+    const item=collection.items[initialIndices[i]];
     return `<g transform="rotate(${i*360/FRAME_COUNT} 250 250)"><clipPath id="${prefix}-frame-${i}"><rect x="217" y="38" width="66" height="83" rx="8"/></clipPath><rect x="216" y="37" width="68" height="85" rx="8" fill="#686b61"/><image data-slot="${i}" href="${esc(item.image||'/assets/unexposed.svg')}" x="217" y="38" width="66" height="83" preserveAspectRatio="xMidYMid slice" clip-path="url(#${prefix}-frame-${i})"/><rect x="217" y="38" width="66" height="83" rx="8" fill="#483908" opacity=".1"/><rect x="244" y="9" width="12" height="26" fill="white"/></g>`;
   }).join('');
   const captions=Array.from({length:7},(_,i)=>{
