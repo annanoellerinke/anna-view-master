@@ -1,9 +1,89 @@
 {
-  "status":"awaiting-photos",
-  "items":[
-    {"id":"austin","title":"Homebody Austin","image":null,"url":"https://homebodystudios.co/pages/austin-studio"},
-    {"id":"montecito","title":"Homebody Montecito","image":null,"url":"https://homebodystudios.co/pages/montecito-studio"},
-    {"id":"culver-city","title":"Homebody Culver City","image":null,"url":"https://homebodystudios.co/pages/culver-city-studio"},
-    {"id":"newport-beach","title":"Homebody Newport Beach","image":null,"url":"https://homebodystudios.co/pages/newport-beach-studio"}
+  "status": "owner-provided",
+  "updatedAt": "2026-10-13",
+  "items": [
+    {
+      "id": "austin-reformer",
+      "location": "austin",
+      "title": "Homebody Austin \u2014 Reformer",
+      "image": "/assets/homebody-austin-reformer.jpg",
+      "imageAlt": "Reformer at Homebody Austin",
+      "url": "https://homebodystudios.co/pages/austin-studio"
+    },
+    {
+      "id": "austin-mat",
+      "location": "austin",
+      "title": "Homebody Austin \u2014 Mat room",
+      "image": "/assets/homebody-austin-mat.jpg",
+      "imageAlt": "Mat room at Homebody Austin",
+      "url": "https://homebodystudios.co/pages/austin-studio"
+    },
+    {
+      "id": "austin-lobby",
+      "location": "austin",
+      "title": "Homebody Austin \u2014 Lobby",
+      "image": "/assets/homebody-austin-lobby.jpg",
+      "imageAlt": "Lobby at Homebody Austin",
+      "url": "https://homebodystudios.co/pages/austin-studio"
+    },
+    {
+      "id": "montecito-studio",
+      "location": "montecito",
+      "title": "Homebody Montecito \u2014 Studio",
+      "image": "/assets/homebody-montecito-studio.jpg",
+      "imageAlt": "Studio at Homebody Montecito",
+      "url": "https://homebodystudios.co/pages/montecito-studio"
+    },
+    {
+      "id": "montecito-lobby",
+      "location": "montecito",
+      "title": "Homebody Montecito \u2014 Lobby",
+      "image": "/assets/homebody-montecito-lobby.jpg",
+      "imageAlt": "Lobby at Homebody Montecito",
+      "url": "https://homebodystudios.co/pages/montecito-studio",
+      "portrait": true
+    },
+    {
+      "id": "culver-city-reformer",
+      "location": "culver-city",
+      "title": "Homebody Culver City \u2014 Reformer",
+      "image": "/assets/homebody-culver-city-reformer.jpg",
+      "imageAlt": "Reformer at Homebody Culver City",
+      "url": "https://homebodystudios.co/pages/culver-city-studio"
+    },
+    {
+      "id": "culver-city-mat",
+      "location": "culver-city",
+      "title": "Homebody Culver City \u2014 Mat room",
+      "image": "/assets/homebody-culver-city-mat.jpg",
+      "imageAlt": "Mat room at Homebody Culver City",
+      "url": "https://homebodystudios.co/pages/culver-city-studio"
+    },
+    {
+      "id": "culver-city-lobby",
+      "location": "culver-city",
+      "title": "Homebody Culver City \u2014 Lobby",
+      "image": "/assets/homebody-culver-city-lobby.jpg",
+      "imageAlt": "Lobby at Homebody Culver City",
+      "url": "https://homebodystudios.co/pages/culver-city-studio",
+      "portrait": true
+    },
+    {
+      "id": "newport-reformer",
+      "location": "newport-beach",
+      "title": "Homebody Newport Beach \u2014 Reformer",
+      "image": "/assets/homebody-newport-reformer.jpg",
+      "imageAlt": "Reformer at Homebody Newport Beach",
+      "url": "https://homebodystudios.co/pages/newport-beach-studio"
+    },
+    {
+      "id": "newport-2",
+      "location": "newport-beach",
+      "title": "Homebody Newport Beach \u2014 Around the studio",
+      "image": "/assets/homebody-newport-2.jpg",
+      "imageAlt": "Around the studio at Homebody Newport Beach",
+      "url": "https://homebodystudios.co/pages/newport-beach-studio",
+      "portrait": true
+    }
   ]
 }
