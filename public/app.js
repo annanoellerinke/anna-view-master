@@ -20,6 +20,7 @@ function updateSelection(announce=true){
   $('#viewer-frame').textContent=String(index+1).padStart(2,'0');
   $('#selected-title').textContent=headline(item.title);
   const image=$('#selected-image');
+  $('#photo-link').classList.toggle('natural-size',active.key==='instagram'&&!!item.image);
   image.hidden=!item.image;
   $('#empty-photo').hidden=!!item.image;
   if(item.image){image.src=safeURL(item.image);image.alt=item.imageAlt||headline(item.title);image.classList.toggle('portrait',active.key==='instagram'||item.portrait===true);}

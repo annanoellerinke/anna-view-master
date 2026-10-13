@@ -10,3 +10,8 @@
 [hidden]{display:none!important}.spare{clip-path:circle(50% at 50% 50%)}
 
 @media(min-width:901px){.stage{container-type:inline-size}h2{font-size:clamp(21px,2.04cqw,36px)}}
+
+/* Instagram mounts follow the photograph's own proportions. */
+.photo-mount.natural-size{width:fit-content;max-width:100%;margin-inline:auto}
+.selected-view .natural-size #selected-image{width:auto;height:auto;max-width:100%;max-height:420px;aspect-ratio:auto;object-fit:contain}
+@media(min-width:901px){.selected-view .natural-size #selected-image{max-height:22cqw}}
