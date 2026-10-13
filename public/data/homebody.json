@@ -1,0 +1,9 @@
+{
+  "status":"awaiting-photos",
+  "items":[
+    {"id":"austin","title":"Homebody Austin","image":null,"url":"https://homebodystudios.co/pages/austin-studio"},
+    {"id":"montecito","title":"Homebody Montecito","image":null,"url":"https://homebodystudios.co/pages/montecito-studio"},
+    {"id":"culver-city","title":"Homebody Culver City","image":null,"url":"https://homebodystudios.co/pages/culver-city-studio"},
+    {"id":"newport-beach","title":"Homebody Newport Beach","image":null,"url":"https://homebodystudios.co/pages/newport-beach-studio"}
+  ]
+}
