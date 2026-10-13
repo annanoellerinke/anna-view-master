@@ -30,13 +30,15 @@ npm run build
 
 The UI font stack uses Gill Sans where available, with the bundled open-source Jost font as a fallback. The four interface labels use a bold uppercase sans serif treatment. Article titles keep the approved serif styling.
 
+The center paper label reads **ANNA'S / POINT OF / VIEW**. Its photographic patch (`public/assets/annas-point-of-view.jpg`) was edited with the built-in image-generation tool and is clipped to the existing label window, preserving the rest of the original viewer. To personalize it, replace that patch and retain its SVG placement in `public/index.html`.
+
 ## Content and automatic updates
 
 The bundled data makes the experience usable immediately and remains the fallback during source outages.
 
 - **Substack:** `/api/feed` fetches the publication's `sort=top` archive and preserves that ordering. The response is cached for one hour and revalidates as visitors arrive. A failed fetch keeps the saved collection. Change `PUBLICATION` in `lib/feeds.mjs` for another publication.
 - **Instagram:** the current bundle contains a saved collection of 50 posts, refreshed with the three newest visible posts on October 13, 2026. Ongoing automatic updates require an authorized Instagram professional-account connection. The account's owner must supply `INSTAGRAM_ACCESS_TOKEN` and `INSTAGRAM_USER_ID` as Vercel environment variables. These are read only by the server function; never put them in `public/` or commit them. The reader requests media and captions only, prefers video thumbnails, sorts by publication date, and links each selection to the profile. This does not publish or send anything to Instagram. Credential setup, renewal, and a live API response still need verification before claiming this connection is enabled.
-- **Homebody:** four verified location links are configured. The owner-provided studio photographs are still pending; those slots have an explicit empty state.
+- **Homebody:** 10 owner-provided photographs cover Austin, Montecito, Culver City, and Newport Beach. Every photograph opens the matching studio page. Studio names and room labels follow the supplied filenames.
 
 The refresh can update an untouched reel immediately. Once a visitor has started exploring, incoming content waits until a reel is reloaded, so the selection does not jump unexpectedly.
 
