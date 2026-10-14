@@ -1,4 +1,5 @@
 import {reelSVG,frameIndices,mod,FRAME_COUNT} from './reel.js';
+import {instagramPostURL} from './instagram-links.js';
 const $ = selector => document.querySelector(selector);
 const homebody={key:'homebody',label:'HOMEBODY',subtitle:'STUDIO LOCATIONS',number:1,action:'Visit this studio',sceneLabels:['Austin','Montecito','Culver City','Newport Beach'],items:[]};
 const substack={key:'substack',label:'LE INDEX',subtitle:'SUBSTACK · TOP 20',number:2,action:'Read on Substack',sceneLabels:['From Le Index','On building','On life','On writing'],items:[]};
@@ -25,9 +26,10 @@ function updateSelection(announce=true){
   $('#empty-photo').hidden=!!item.image;
   if(item.image){image.src=safeURL(item.image);image.alt=item.imageAlt||headline(item.title);image.classList.toggle('portrait',active.key==='instagram'||item.portrait===true);}
   else{$('#empty-location').textContent=item.title.replace('Homebody ','');}
-  $('#photo-link').href=safeURL(item.url);
+  const destination=active.key==='instagram'?instagramPostURL(item.postUrl||item.url)||'#':safeURL(item.url);
+  $('#photo-link').href=destination;
   $('#photo-link').setAttribute('aria-label',`${active.action}: ${headline(item.title)} (opens in a new tab)`);
-  $('#destination').href=safeURL(item.url);
+  $('#destination').href=destination;
   $('#destination').replaceChildren(document.createTextNode(`${active.action} `),Object.assign(document.createElement('span'),{textContent:'↗'}));
   $('#destination').lastChild.setAttribute('aria-hidden','true');
   $('#collection-note').textContent=active.key==='instagram'&&active.status!=='live'?`Collection · ${new Date(active.updatedAt).toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric',timeZone:'UTC'})}`:'';
