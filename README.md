@@ -4,6 +4,8 @@ A photographic, interactive View-Master with three swappable reels: Homebody Stu
 
 [Open the live View-Master](https://anna-view-master.vercel.app/) · [Download the complete source and images](https://github.com/annanoellerinke/anna-view-master/archive/refs/heads/main.zip)
 
+**New to building websites? [Start here: make your own in 4 easy steps](START_HERE.md).** Includes a copy-and-paste Codex prompt, personalization, and publishing instructions.
+
 ## Run it
 
 Install Node.js 22 or newer, download and unzip the complete source linked above, open its folder in your terminal, and run:
