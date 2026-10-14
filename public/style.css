@@ -15,3 +15,17 @@
 .photo-mount.natural-size{width:fit-content;max-width:100%;margin-inline:auto}
 .selected-view .natural-size #selected-image{width:auto;height:auto;max-width:100%;max-height:420px;aspect-ratio:auto;object-fit:contain}
 @media(min-width:901px){.selected-view .natural-size #selected-image{max-height:22cqw}}
+
+/* Keep the mobile label in the flow below the actual reel stack. */
+@media(max-width:900px){
+  .reel-library{height:auto;align-self:start;container-type:inline-size}
+  #spare-reels{position:relative;height:calc(228.8px + 135cqw)}
+  .spare{top:66px}
+  .spare:nth-child(2){top:228.8px}
+  .choose-label{position:relative;top:auto;margin-top:16px}
+}
+@media(max-width:540px){
+  #spare-reels{height:calc(102.48px + 146cqw)}
+  .spare{top:4.88px}
+  .spare:nth-child(2){top:102.48px}
+}
